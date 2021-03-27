@@ -4,7 +4,8 @@ app=Flask(__name__)
 @app.route("/")
 def hello_world():
     name='Flask'
-    return render_template("index.html",name_value=name)
+    players=['勇者','戦士','魔法使い']
+    return render_template("index.html",name_value=name,players=players)
 
 @app.route("/about")
 def about():
